@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2021"
 description = "A modern programming language supporting Indian languages"
 
+[[bin]]
+name = "lipi"
+path = "src/bin/main.rs"
+
 [dependencies]
 clap = { version = "4.4", features = ["derive"] }
 thiserror = "1.0"

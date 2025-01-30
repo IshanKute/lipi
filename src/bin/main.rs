@@ -2,16 +2,13 @@ use clap::{Parser, Subcommand};
 use std::path::PathBuf;
 use std::error::Error;
 
-use crate::core::lexer::SourceLexer;
-use crate::core::parser::FunctionParser;
-use crate::core::interpreter::FunctionInterpreter;
-use crate::lang::Language;
-use crate::core::lexer::Lexer;
-use crate::core::parser::Parser as LipiParser;
-use crate::core::interpreter::Interpreter;
-
-mod core;
-mod lang;
+use lipi::core::lexer::SourceLexer;
+use lipi::core::parser::FunctionParser;
+use lipi::core::interpreter::FunctionInterpreter;
+use lipi::lang::Language;
+use lipi::core::lexer::Lexer;
+use lipi::core::parser::Parser as LipiParser;
+use lipi::core::interpreter::Interpreter;
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
